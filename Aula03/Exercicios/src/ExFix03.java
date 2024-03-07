@@ -1,29 +1,34 @@
 import java.util.Scanner;
 
 public class ExFix03 {
+
+    public static void imprimir(String str) {
+        System.out.println(str);
+    }
+
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
 
         double[] nota = new double[5];
 
-        System.out.println("Matrícula: ");
+        imprimir("Matrícula: ");
         int matric = ler.nextInt();
         ler.nextLine();
-        System.out.println("Nome: ");
+        imprimir("Nome: ");
         String nome = ler.nextLine();
         for (int i = 0; i < 5; i++) {
-            System.out.println("Nota (" + (i + 1) + "): ");
+            imprimir("Nota (" + (i + 1) + "): ");
             nota[i] = ler.nextDouble();
             while (nota[i] < 0 || nota[i] > 10) {
-                System.out.println("Nota Invalida digite a nota entre 0 e 10");
+                imprimir("Nota Invalida digite a nota entre 0 e 10");
                 nota[i] = ler.nextDouble();
             }
         }
 
-        System.out.println("Matrícula: " + matric);
-        System.out.println("Nome: " + nome);
+        imprimir("Matrícula: " + matric);
+        imprimir("Nome: " + nome);
         for (int i = 0; i < 5; i++) {
-            System.out.println("Nota (" + (i + 1) + "): " + nota[i]);
+            imprimir("Nota (" + (i + 1) + "): " + nota[i]);
         }
         ler.close();
     }

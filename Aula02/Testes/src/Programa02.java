@@ -7,7 +7,7 @@ public class Programa02 {
 
         boolean exec = true;
         int contador = 0;
-        String[] letras = new String[] { "E", "F", "G" };
+        String[] letras = new String[] { "A", "B", "C" };
 
         while (exec && contador < letras.length) {
             String letra = letras[contador];
