@@ -15,6 +15,5 @@ public class Programa02 {
             contador++;
         }
 
-        
     }
 }

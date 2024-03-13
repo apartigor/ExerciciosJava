@@ -23,33 +23,29 @@ public class ExFix {
         double[] notaF = new double[5];
         boolean[] aprovado = new boolean[5];
 
-        for(int i = 0; i < 5; i++)
-        {
-        System.out.println("Digite a Matricula (" + i + ")");
-        matric[i] = ler.nextInt();
-        ler.nextLine();
-        System.out.println("Digite o nome (" + i + ")");
-        nome[i] = ler.nextLine();
-        System.out.println("Digite a primeira nota (" + i + ")");
-        nota1[i] = ler.nextDouble();
-        System.out.println("Digite a segunda nota (" + i + ")");
-        nota2[i] = ler.nextDouble();
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Digite a Matricula (" + i + ")");
+            matric[i] = ler.nextInt();
+            ler.nextLine();
+            System.out.println("Digite o nome (" + i + ")");
+            nome[i] = ler.nextLine();
+            System.out.println("Digite a primeira nota (" + i + ")");
+            nota1[i] = ler.nextDouble();
+            System.out.println("Digite a segunda nota (" + i + ")");
+            nota2[i] = ler.nextDouble();
 
-        notaF[i] = (nota1[i] + nota2[i]) / 2;
+            notaF[i] = (nota1[i] + nota2[i]) / 2;
 
-        aprovado[i] = notaF[i] >= 6;
-    }
+            aprovado[i] = notaF[i] >= 6;
+        }
 
-        for(int i = 0; i < 5; i++)
-        {
-        System.out.println("\nMatricula(" + i + "): " + matric[i]);
-        System.out.println("Nome(" + i + "): " + nome[i]);
-        System.out.println("Aprovado(" + i + "): " + (aprovado[i] ? "(X) Sim ( ) Não " : "( ) Sim (X) Não"));
-        System.out.println("Nota Final(" + i + "): " + notaF[i] + "\n");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("\nMatricula(" + i + "): " + matric[i]);
+            System.out.println("Nome(" + i + "): " + nome[i]);
+            System.out.println("Aprovado(" + i + "): " + (aprovado[i] ? "(X) Sim ( ) Não " : "( ) Sim (X) Não"));
+            System.out.println("Nota Final(" + i + "): " + notaF[i] + "\n");
         }
         ler.close();
-
-    
 
     }
 }

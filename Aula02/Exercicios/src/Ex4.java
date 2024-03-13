@@ -11,23 +11,15 @@ public class Ex4 {
         System.out.println("Idade");
         int idade = ler.nextInt();
 
-        if (idade > 0 && idade <= 13)
-        {
+        if (idade > 0 && idade <= 13) {
             System.out.println("Criança");
-        }
-        else if (idade > 13 && idade <= 18)
-        {
+        } else if (idade > 13 && idade <= 18) {
             System.out.println("Adolescente");
-        }
-        else if (idade > 18 && idade <= 60)
-        {
+        } else if (idade > 18 && idade <= 60) {
             System.out.println("Adulto");
-        }
-        else if (idade > 60)
-        {
+        } else if (idade > 60) {
             System.out.println("Idoso");
-        }
-        else {
+        } else {
             System.out.println("Idade Inválida!");
         }
         ler.close();

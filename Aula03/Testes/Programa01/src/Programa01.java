@@ -6,7 +6,7 @@ public class Programa01 {
 
         System.out.println("Tamanho do vetor: ");
         int tamanho = ler.nextInt();
-        
+
         int[] tam = new int[tamanho];
 
         for (int i = 0; i < tam.length; i++) {
